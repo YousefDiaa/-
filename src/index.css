@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  /* Frosted Glass slate palette */
+  --color-brand-navy-950: #020617;
+  --color-brand-navy-900: #0f172a;
+  --color-brand-navy-800: #1e293b;
+  --color-brand-navy-700: #334155;
+  --color-brand-navy-600: #475569;
+  --color-brand-navy-500: #64748b;
+  --color-brand-navy-400: #94a3b8;
+  
+  --color-brand-gold-600: #d97706;
+  --color-brand-gold-500: #f59e0b;
+  --color-brand-gold-400: #fbbf24;
+  --color-brand-gold-300: #fde047;
+  --color-brand-gold-200: #fef08a;
+  --color-brand-gold-100: #fef9c3;
+}
+
+@layer base {
+  html, body {
+    direction: rtl;
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    background-color: #020617;
+    color: #f1f5f9;
+  }
+}
+
+/* Custom Utilities for Frosted Glass UI */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+}
+
+.navy-gradient-bg {
+  background: linear-gradient(180deg, #0f172a 0%, #020617 100%);
+}
+
+.gold-border-glow:hover {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.25);
+  border-color: rgba(245, 158, 11, 0.4);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060b18;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #16223f;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dfb944;
+}

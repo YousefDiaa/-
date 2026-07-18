@@ -1,11 +1,113 @@
-<div align="center">
+# 🏫 أكاديمية صَرح - منصة الثانوية العامة المتكاملة | Sarh Academy
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+منصة تعليمية مبتكرة وعالية الأداء مصممة خصيصاً لتلبية احتياجات طلاب الشهادة الثانوية العامة في مصر وتأهيلهم للتفوق الدراسي والقبول بكليات القمة بالتعاون مع نخبة من كبار ومستشاري المواد.
 
-  <h1>Built with AI Studio</h2>
+An elegant, high-performance educational platform designed specifically for Egyptian high school (Thanaweya Amma) students, built with **React**, **TypeScript**, **Tailwind CSS v4**, and **Motion**.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+---
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## ✨ المميزات الرئيسية | Core Features
 
-</div>
+### 👤 تجربة الطالب | Student Experience
+* **نخبة المدرسين الخبراء**: تصفح وحجز حصص مع كبار أساتذة الجمهورية في مختلف الشعب والمواد الدراسية (علمي علوم، علمي رياضة، أدبي).
+* **الباقات السنوية والشهرية**: اشتراكات وحزم توفيرية متكاملة بخصومات هائلة لمتابعة المناهج الدراسية طوال العام الدراسي.
+* **متجر الكتب والمذكرات**: متجر إلكتروني متكامل لشراء وحجز الملازم والكتب الحصرية، مع توفير خيارات التوصيل السريع للمحافظات.
+* **حقيبة حجز ذكية**: تتبع الحجوزات ومجموع الخدمات والكتب المطلوبة مع آلية تقديم طلبات الحجز المباشرة والدعم عبر الواتساب.
+
+### 📊 لوحة الإدارة والتحكم | Admin Dashboard
+* **مؤشرات الأداء وتحليل البيانات**: واجهة رسومية ومؤشرات تفاعلية لإيرادات الأكاديمية والطلبات المعلقة وتوزيع الطلاب جغرافياً حسب المحافظات الأكثر تسجيلاً.
+* **إدارة الطلبات الواردة**: مراجعة طلبات التسجيل المقدمة من الطلاب، وتأكيد الحجوزات أو إلغائها والتحكم التام بها.
+* **إدارة طاقم التدريس وجداول الحصص**: إمكانية إضافة مدرسين جدد وتحديث المواد الدراسية وسنوات الخبرة مباشرة.
+* **إدارة متجر الكتب والملازم**: إضافة وتحديث الكتب والملازم الجديدة وتحديد أسعارها لتظهر في المتجر فوراً.
+
+---
+
+## 🛠️ التقنيات المستخدمة | Tech Stack
+
+* **Front-End Framework**: React 19 (TypeScript)
+* **Build Tool**: Vite 6
+* **Styling**: Tailwind CSS v4 & custom Frosted Glass theme (التصميم الزجاجي الأنيق والحديث)
+* **Animations**: Motion (framer-motion) for smooth layout transitions
+* **Icons**: Lucide React
+
+---
+
+## 🚀 التشغيل المحلي للمشروع | Local Development
+
+لتشغيل المشروع على جهازك الشخصي، اتبع الخطوات التالية:
+
+1. **تحميل المستودع وتثبيت المكتبات**:
+```bash
+# تثبيت الاعتمادات
+npm install
+```
+
+2. **تشغيل خادم التطوير المحلي**:
+```bash
+npm run dev
+```
+سيتم تشغيل التطبيق محلياً على المنفذ: `http://localhost:3000`
+
+3. **إنشاء نسخة الإنتاج (Build)**:
+```bash
+npm run build
+```
+
+---
+
+## 📦 الرفع إلى GitHub | Push to GitHub
+
+لرفع المشروع إلى مستودع جديد على GitHub، نفذ الأوامر التالية في سطر الأوامر:
+
+```bash
+# تهيئة مستودع جيت محلي
+git init
+
+# إضافة جميع الملفات للمستودع
+git add .
+
+# تسجيل التغييرات الأولى
+git commit -m "Initial commit: Sarh Academy Platform with Frosted Glass design"
+
+# إنشاء فرع رئيسي باسم main
+git branch -M main
+
+# ربط المستودع المحلي بالمستودع البعيد (استبدل الرابط برابط مستودعك الخاص)
+git remote add origin https://github.com/YOUR_USERNAME/sarh-academy.git
+
+# رفع الكود إلى GitHub
+git push -u origin main
+```
+
+---
+
+## 🌐 النشر على Vercel | Deploy to Vercel
+
+تم إعداد المشروع بالكامل ليكون جاهزاً للنشر الفوري على **Vercel** بنقرة واحدة:
+
+### الطرق المتاحة للنشر:
+
+#### الطريقة الأولى: من خلال موقع Vercel (الموصى بها)
+1. قم بزيارة [Vercel](https://vercel.com) وإنشاء حساب أو تسجيل الدخول.
+2. انقر على **"Add New"** ثم اختر **"Project"**.
+3. قم بـ استيراد المستودع (Import) من حسابك على **GitHub**.
+4. سيقوم Vercel تلقائياً باكتشاف إعدادات **Vite**.
+5. اترك الإعدادات الافتراضية كما هي:
+   * **Framework Preset**: `Vite`
+   * **Build Command**: `npm run build`
+   * **Output Directory**: `dist`
+6. انقر على **"Deploy"**. سيتم بناء ونشر الموقع في ثوانٍ معدودة!
+
+#### الطريقة الثانية: باستخدام Vercel CLI
+```bash
+# تثبيت أداة Vercel عالمياً
+npm install -g vercel
+
+# تسجيل الدخول وتدشين النشر
+vercel
+```
+
+### ⚙️ ملف الإعدادات المدمج (`vercel.json`):
+يحتوي المشروع على ملف `vercel.json` جاهز ومكتمل لضمان:
+* دعم الروابط النظيفة (Clean URLs).
+* إعادة توجيه الطلبات (Rewrites) لضمان عمل نظام الـ Routing بكفاءة تامة دون حدوث أخطاء 404 عند تحديث الصفحة.
